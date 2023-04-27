@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Stray Dog</title>
+    <style>
+         html {
+            scroll-behavior: smooth;
+         }
+        .head {
+            margin: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .head img {
+            width: 150px;
+            height: 150px;
+        }
+        body {
+            background: #E3CCAE;
+            margin: 0;
+            padding: 0;
+            
+        }
+        header {
+            background: #B8621B;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+          
+        }
+        .navbar {
+            
+            width: 40%;
+            display: flex;
+        }
+        .navbar a {
+            width: 33.33%;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            font-size: 25px;
+            
+        }
+        .image-box {
+            max-width: 100%;
+            text-align: center;
+            justify-items: center;
+            
+
+        }
+        
+        img {
+            width: 215px;
+            height: 200px;
+            margin: auto;
+        }
+        .dog-info {
+            padding-inline: 100px;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-inline: 20px;
+            justify-content: space-between;
+        }
+        ul li {
+            list-style: none;
+        }
+        .txt {
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.05em;
+            word-spacing: 0.1em;
+        }
+        .txt h1 {
+            margin: 0;
+            
+        }
+        #home {
+            background: url('body.png');
+        }
+        
+        .row  {
+            display: flex;
+            gap: 100px;
+        }
+        .row .col {
+            width: 49%;
+        }
+        #about-us {
+            padding: 90px 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],input[type=email],input[type=tel], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .form-row {
+            display: flex;
+            gap: 50px;
+        }
+        .form-row .form-col {
+            width: 50%;
+        }
+
+            </style>
+        </head>
+        <body  >
+            
+            <header>
+                <div class="head">
+                    <img src="logoo.png" alt="">
+                    <div>
+                        <h1>Adopt to Care</h1>
+                        <p>Find your perfect furry friend today!</p>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#about-us">About us</a>
+                    <a href="#adoption-form">Contact</a>
+                </nav>
+            </header>
+            <div style="margin-top: 200px" id="home">
+                <h2 style="margin: 15px;">
+                    Available Dogs
+                </h2>
+                <div>
+                    <ul>
+                        <li>
+                                <div class="image-box">
+                                    <img src="noynay1.jpg" alt="Jerry's Photo">
+                                
+                                <div class="dog-info">
+                                    <h3>Jeryy</h3>
+                                    <p>Age: 1 year old</p>
+                                    <p>Gender: Male</p>
+                                    <p>Size: Medium</p>
+                                    <p>Personality: Hyper and playful</p>
+                                    
+                                    <button onclick="adoptDog('Jerry')">Adopt Jerry</button>
+                                </div>
+                            </li>
+                    
+                        <li>
+                            <div class="image-box">
+                                <img src="nonay2.jpg" alt="Jerry's Photo">
+                            
+                            <div class="dog-info">
+                                <h3>Jeryy</h3>
+                                <p>Age: 1 year old</p>
+                                <p>Gender: Male</p>
+                                <p>Size: Medium</p>
+                                <p>Personality: Hyper and playful</p>
+                                
+                                <button onclick="adoptDog('Jerry')">Adopt Jerry</button>
+                            </div>
+                        </li>
+                        </li>
+                        <li>
+                            <div class="image-box">
+                                <img src="noy3.jpg" alt="Jerry's Photo">
+                            
+                            <div class="dog-info">
+                                <h3>Jeryy</h3>
+                                <p>Age: 1 year old</p>
+                                <p>Gender: Male</p>
+                                <p>Size: Medium</p>
+                                <p>Personality: Hyper and playful</p>
+                                
+                                <button onclick="adoptDog('Jerry')">Adopt Jerry</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="about-us">
+                <div id="about-us" style="margin: 15px;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="txt">
+                                <h1><b>A little information about us</b></h1>
+                                <p>This website is made for people who plan to adopt street dogs who have lost their owners and have nothing
+                                    To eat and are experiencing thirst and hunger on the street because no one cares for them. So we took 
+                                    Them to treat them, take care of them, feed them, and give them a family that will take care of them. 
+                                    Apart from that, our website also offers the services that can be seen below, 
+                                    And we also sell food and other things that dogs need. Your purchase from our shop will help support 
+                                    those in need of dogs that are in our care.</p>   
+                                <h1><b>Our Goal</h1></b>
+                                <p>Our goal here is to 
+                                    help the poor dogs To be found by a 
+                                    family and given food and shelter, 
+                                    We get them from the streets or mountains where 
+                                    They have been abused or neglected before We give them to those 
+                                    who are willing to adopt,We first make sure that the adopter has 
+                                    The ability to care for and love the dog. One of the reasons why 
+                                    this group was created is to Introduce our own 
+                                    breed of dog to our countrymen. Instead of buying an expensive dog, It is better to adopt, 
+                                    You can help the poor dogs and we make sure that before we give them to 
+                                    Your dog is safe and has been vaccinated</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="grid.jpg" alt="" style="width: 100%;height: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div id="button" style="margin: 15px;">
+                    <h2>Contact us for Inquires.</h2>
+                    <h3><a href="mailto:adoptcare@gmail.com">adoptcare@gmail.com</a></h3>
+                    <h3>09979461491/09605198826</h3>
+                </div>
+            </div>
+            
+            <div id="adoption-form" style="margin: 15px;">
+                <h2>Adoption Form</h2>
+                <div class="form-container">
+                    <form id="adoption-form" method="POST" action="thankyou.html">
+                    
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-col">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="tel" required>
+                            </div>
+                            <div class="form-col">
+                                <label for="name">Dog Name:</label>
+                                <select name="" id="">
+                                    <option value="">Jery</option>
+                                    <option value="">Kyle</option>
+                                    <option value="">Nicole</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" value="Submit" style="margin-top: 30px;">
+                        
+                    </form>
+                </div>
+            </div>
+            <footer>
+        <p>&copy; 2023 Dog Adoption Center. Adopt to care All rights reserved.</p>
+    </footer>
+</body>
+</html>
